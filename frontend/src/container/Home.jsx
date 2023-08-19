@@ -40,12 +40,12 @@ const Home = () => {
       </div>
       <div className="flex md:hidden flex-row">
         <div className="p-2 w-full flex flex-row justify-between items-center shadow-md  ">
-          <HiMenu fontSize={40} className="cursor-point" onClick={() => setToggleSidebar(true)} />
+          <HiMenu fontSize={30} className="cursor-point" onClick={() => setToggleSidebar(true)} />
           <Link to="/">
-            <img src={logo2} to="/" alt="logo" className="w-30" />
+            <img src={logo2} to="/" alt="logo" className="w-40" />
           </Link>
           <Link to={`user.profile/${user?._id}`}>
-            <img src={user?.image} to="/" alt="logo" className="w-28" />
+            <img src={user?.image} to="/" alt="logo" className="w-11 rounded-full" />
           </Link>
         </div>
         {toggleSidebar && (
